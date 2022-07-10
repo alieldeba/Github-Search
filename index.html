@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Github Search - Github Best Searcher</title>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center h-screen">
+      <form
+        class="flex items-center p-2 bg-slate-700 h-[50px]"
+        onsubmit="event.preventDefault()"
+      >
+        <i class="fa-solid fa-magnifying-glass text-white w-fit"></i>
+        <input
+          type="text"
+          placeholder="Enter username"
+          class="bg-slate-700 pl-2 mr-2 border-none outline-none text-white w-[100px] sm:w-[200px]"
+        />
+        <button class="w-[80px] bg-blue-700 text-white">Search</button>
+      </form>
+      <p></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
