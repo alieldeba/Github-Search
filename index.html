@@ -2,91 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./dist/output.css" rel="stylesheet" />
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Github Search - Github Best Searcher</title>
+    <title>Github Searcher</title>
   </head>
-  <body class="flex justify-center items-center">
-    <div
-      class="flex flex-col justify-center items-center h-screen w-[500px] gap-2"
-    >
-      <!-- first row -->
-      <!-- <section class="flex justify-between items-center w-full">
-        <h1 class="text-3xl">alieldeba</h1>
-        <i class="fa-solid fa-moon text-2xl cursor-pointer"></i>
-      </section> -->
-      <!-- second row -->
-      <form
-        class="flex items-center p-2 bg-slate-700 h-[50px]"
-        onsubmit="event.preventDefault()"
-      >
-        <i class="fa-solid fa-magnifying-glass text-white w-fit"></i>
-        <input
-          type="text"
-          placeholder="Enter username"
-          class="bg-slate-700 pl-2 mr-2 border-none outline-none text-white w-full sm:w-[200px]"
-        />
-        <button class="w-[80px] bg-blue-700 text-white h-full">Search</button>
-      </form>
-      <!-- third row -->
-      <section class="flex w-full">
-        <img
-          src=""
-          alt="github user"
-          class="rounded-full w-[100px] h-[100px] mr-5"
-        />
-        <div class="states">
-          <div class="mb-5">
-            <h3 class="text-xl username"></h3>
-            <a href="" target="_blank" class="login"></a>
-          </div>
-          <p class="bio mb-5"></p>
-          <div class="box p-5 my-5 text-center">
-            <div class="box flex gap-5">
-              <div class="flex flex-col">
-                <p>Repos</p>
-                <p class="repos"></p>
-              </div>
-              <div class="flex flex-col">
-                <p>Followers</p>
-                <p class="followers"></p>
-              </div>
-              <div class="flex flex-col">
-                <p>Following</p>
-                <p class="following"></p>
-              </div>
-            </div>
-          </div>
-          <div class="social-media grid grid-cols-2 grid-rows-2">
-            <div class="location flex items-center">
-              <i class="fa-solid fa-location-dot mr-3 w-[10px]"></i>
-              <p></p>
-            </div>
-            <div class="twitter flex items-center">
-              <i class="fa-brands fa-twitter mr-3 w-[10px]"></i>
-              <p></p>
-            </div>
-            <div class="website flex items-center">
-              <i class="fa-solid fa-link mr-3 w-[10px]"></i>
-              <p></p>
-            </div>
-            <div class="company flex items-center">
-              <i class="fa-solid fa-building mr-3 w-[10px]"></i>
-              <p></p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <script src="index.js"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
