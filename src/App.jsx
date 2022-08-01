@@ -18,24 +18,25 @@ export default function App() {
   }
 
   function setUserName(name) {
-    setUser(name);
+    setUser(name.trim().replace(/\s+/g, "-"));
   }
 
   return (
     <>
-      <div className="container">
-        <Search
-          setUserName={setUserName}
-          getUserApi={getUserApi}
-        />
+      <div className="container m-auto">
+        <Search setUserName={setUserName} getUserApi={getUserApi} />
         <States
           img={userApi.avatar_url}
-          bio={userApi.bio}
-          blog={userApi.blog}
-          company={userApi.company}
-          page={userApi.html_url}
-          location={userApi.location}
           name={userApi.name}
+          login={userApi.login}
+          repos={userApi.public_repos}
+          bio={userApi.bio}
+          company={userApi.company}
+          location={userApi.location}
+          followers={userApi.followers}
+          email={userApi.email}
+          page={userApi.html_url}
+          blog={userApi.blog}
           twitter={userApi.twitter_username}
         />
       </div>

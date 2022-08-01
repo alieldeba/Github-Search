@@ -14,7 +14,7 @@ export default function ({ setUserName, getUserApi }) {
             className="w-full p-2.5 ml-2 bg-transparent outline-none"
             onChange={(e) => setUserName(e.target.value)}
           />
-          <button className="px-5 py-2.5 text-gray-700 border rounded-md duration-100 hover:border-indigo-600 active:shadow-lg">
+          <button className="px-5 py-2.5 text-gray-700 border duration-100 hover:border-indigo-600 active:shadow-lg">
             Search
           </button>
         </form>
